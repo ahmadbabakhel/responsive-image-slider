@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/animate.css" rel="stylesheet" type="text/css"/> 
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slider-style.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div style="height:300px;">
+            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item row active">
+                        <img class="d-block w-100" src="./images/slide1.jpg" alt="First slide">
+                        <div class="carousel-caption">
+                        	
+                                <h1 class="animated animate fadeInDown">Color coordinated labels providing you with the most aesthetically pleasing cards ever seen.</h1>
+                                
+                                <p class="animated animate fadeInUp">
+                                    <button class="btn">About US</button>
+                                    <button class="btn">Create Account</button>
+                                </p>
+	                        
+                        </div>
+                    </div>
+                    <div class="carousel-item row">
+                        <img class="d-block w-100" src="./images/slide2.jpg" alt="Second slide">
+                        <div class="carousel-caption">
+                        <div class="slideshow_caption">
+                        		<div class="col-lg-6 float-right align-middle">
+                                    <h1 class="animated fadeInDown">Simple, sensible pricing.</h1>
+                                    <p class="animated fadeInUp">Pay by the day, not by card value.
+										10, 30 and 60 day turnaround times available at reasonable rates.
+                                    </p>
+                                    <p class="animated fadeInDown">
+                                        <button class="btn">About US</button>
+                                        <button class="btn">Create Account</button>
+                                    </p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item row">
+                        <img class="d-block w-100" src="./images/slide3.jpg" alt="Third slide">
+                        <div class="carousel-caption">
+                        <div class="col-lg-6 float-left align-middle">
+                        <h1 class="animated fadeInDown">Consistent, accurate grading.</h1>
+                            <p class="animated fadeInUp">
+                                Revolutionizing the industry by implementing software that will
+								allow us to scan, analyze, and grade cards without subjectivity.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                     
+                </div>
+<!--                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>-->
+            </div>
+        </div>
+        <script src="./js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $('.carousel').carousel({
+                interval: 3000,
+                autoplays:true
+            });
+        </script>
+    </body>
+</html>
